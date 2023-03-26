@@ -2,15 +2,27 @@
 function loadApp() {
 
 	// Create the flipbook
+    const o = window.orientation;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    var wm;
+    var hm;
+    if(w >= h && Math.abs(o) == 90  ){
+        wm = "100vw";
+        hm = "min(100vw,100vh)";
+    }else{
+        wm = "max(100vh,100vw)";
+        hm = "min(100vw,100vh)";
+    }
 
 	$('.flipbook').turn({
 			// Width
 
-			width:"max(100vw,100vh)",
+			width:wm,
 			
 			// Height
 
-			height:"100vh",
+			height:hm,
 
 			// Elevation
 

@@ -104,14 +104,15 @@ header h4{
     font-size: min(10vw, 10vh);
 }
 
-
-
-
 main{
     position: absolute;
     z-index: 0;
     width: 100vw;
     height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 
