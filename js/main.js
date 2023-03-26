@@ -6,7 +6,7 @@ function loadApp() {
 	$('.flipbook').turn({
 			// Width
 
-			width:"100vw",
+			width:"max(100vw,100vh)",
 			
 			// Height
 

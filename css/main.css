@@ -51,12 +51,13 @@ body {
     padding: 0;
 }
 
-header{
+header, .warning{
     position: absolute;
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: #7fffd4;
+    text-shadow: black 1px 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,17 +68,18 @@ header{
 
 header h1{
     font-family: "Lobster";
-    font-size: 16rem;
+    color: #4ac099;
+    font-size: min(20vw, 20vh);
 }
 
 header h2{
     font-family: "Pacifico";
-    font-size: 5rem;
+    font-size: min(10vw, 10vh);
 }
 
 header h3{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 5rem;
+    font-size: min(10vw, 10vh);
 }
 
 .press{
@@ -94,8 +96,15 @@ header h3{
 
 header h4{
     font-family: "Lobster";
-    font-size: 8rem;
+    font-size: min(16vw, 16vh);
 }
+
+.warning .boton h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: min(10vw, 10vh);
+}
+
+
 
 
 main{
@@ -103,4 +112,11 @@ main{
     z-index: 0;
     width: 100vw;
     height:100vh;
+}
+
+
+@media screen and (min-width: 100vh) {
+    .warning{
+        display: none;
+    }
 }
