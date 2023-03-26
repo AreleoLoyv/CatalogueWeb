@@ -47,3 +47,14 @@ yepnope({
 	both: ['css/basic.css'],
 	complete: loadApp
 });
+
+let i = document.getElementById("ini");
+
+function start(){
+    i.classList.add("next");
+    setTimeout(function(){
+        i.style.display = "none";
+    },2000);
+}
+
+i.addEventListener("click",function(){start()});
